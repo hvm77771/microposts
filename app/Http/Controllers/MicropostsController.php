@@ -21,7 +21,6 @@ class MicropostsController extends Controller
         
         return view('welcome', $data);
     }
-}
 
     public function store(Request $request)
     {
@@ -35,7 +34,6 @@ class MicropostsController extends Controller
 
         return back();
     }
-    
         public function destroy($id)
     {
         $micropost = \App\Micropost::find($id);
@@ -46,3 +44,4 @@ class MicropostsController extends Controller
 
         return back();
     }
+}
